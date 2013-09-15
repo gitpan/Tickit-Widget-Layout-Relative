@@ -1,5 +1,11 @@
 Revision history for Tickit-Widget-Layout-Relative
 
+0.003     2013-09-15 16:41:32 Europe/London
+	No new features.
+
+	Examples:
+	* Provided a Tickit::DSL-based version of the base.pl example
+
 0.002     2013-09-15 03:55:49 Europe/London
 	No new features.
 

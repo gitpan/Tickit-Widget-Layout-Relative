@@ -4,16 +4,15 @@ use strict;
 use warnings;
 use parent qw(Tickit::ContainerWidget);
 
-our $VERSION = '0.002';
+our $VERSION = '0.003';
 
 =head1 NAME
 
+Tickit::Widget::Layout::Relative - apply sizing to a group of L<Tickit> widgets
 
 =head1 VERSION
 
-version 0.002
-Tickit::Widget::Layout::Relative - apply sizing to a group
-of L<Tickit> widgets
+version 0.003
 
 =head1 SYNOPSIS
 

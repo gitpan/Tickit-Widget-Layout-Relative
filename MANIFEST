@@ -11,6 +11,7 @@ cpanfile
 dist.ini
 examples/base.pl
 examples/demo.pl
+examples/dsl.pl
 lib/Tickit/Layout/Relative.pm
 lib/Tickit/Widget/Layout/Relative.pm
 lib/Tickit/Widget/Layout/Relative.pod
