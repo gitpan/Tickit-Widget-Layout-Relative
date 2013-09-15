@@ -1,0 +1,50 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.73.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 aada962aa10ead8448b763e624cdeee667671d85 Changes
+SHA1 97c2e1700a2026b437c0826f269b9d67e5922189 INSTALL
+SHA1 aeb48d9f22d31def6e02d02d35dd602604e84a36 LICENSE
+SHA1 880d5f9c5dfcd30eacd8b1e6cf935e28e32e881f MANIFEST
+SHA1 cb7e59f57d822f164377b91562cdb04ff4c22cba META.json
+SHA1 e119c2201a25796afca1e81c83bac512556fa428 META.yml
+SHA1 f0a5f93e41b0e2d78d413cc5d0686f6ceca21d8b Makefile.PL
+SHA1 3cd331c9b32731fb9ca518771e4916f573646398 README
+SHA1 3970e4b93349b576b94347071c0e15436891b135 cpanfile
+SHA1 102c81f6561742400d829c733d0a16aa76919021 dist.ini
+SHA1 545964b8590dd72bd1e9eac9c98ca647cefbb966 examples/base.pl
+SHA1 54f15f86091bca673070aa10005793926ee934f5 examples/demo.pl
+SHA1 900a5957b1b92da254daa0b9386d56dc67c67e47 lib/Tickit/Layout/Relative.pm
+SHA1 cc3449ce1d75224111221790f7bc4eaf74fbaa89 lib/Tickit/Widget/Layout/Relative.pm
+SHA1 9282a5ef24d2cc968287cfbe3f13c82862b00e18 lib/Tickit/Widget/Layout/Relative.pod
+SHA1 90f75289c4dda63c94bc5e897f4996b15d9e42dd t/00-check-deps.t
+SHA1 103ccbbb090d5801ac0afad72e87ba8d71eec4ed t/00-compile.t
+SHA1 8a649950be26c5ee378eec15b7347387b9586aef xt/author/test-eol.t
+SHA1 198d1665317c3d91e3bb81f0a3b8dad8d4d66f20 xt/release/common_spelling.t
+SHA1 c6c3c9f7fe12058b4771449dff874b1c450c982c xt/release/mojibake.t
+SHA1 9934d36e45e1143c1a54658bc48872e0591af41b xt/release/pod-syntax.t
+SHA1 fd1fa776fca35fc8f1bdd24ee3fbaa1eca755a44 xt/release/synopsis.t
+SHA1 bbcd59d081d9940af5d43337ae85458075933829 xt/release/test-version.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.12 (GNU/Linux)
+
+iQEcBAEBAgAGBQJSNRvUAAoJEFKElMNpjtyDK24IAKq/wppWxhhiErm2/2nRaAtf
+zm1ZktwVbiuvwu/mjH/T+k8C9EJik570yE6/8O0sBTsjy710EZ0gKzILWw0oV0jA
+7m1EVncfJhCM7rsKDST7aJt4B/w59ziRR3nRTHNis1SUEr/Xaatciu3fl4qLPTk7
+fUrDEgHqtd6TfOuqIzDal6j4r0L9ftGOV52bS1vkk5WsVswIqAV1M45HdACAcCwG
+D89DcmfaVVSjcr6Cy0twr2T9xnlGebwfNsvt4yxWx7aoKpYK9ItrBBk/7dupMYUD
+MtLgyzQ1UHg279LTF/64py6rUKFEwUMCf5316IFMiQ8jkn3CYkZnuCWNxvRtIJE=
+=bVcs
+-----END PGP SIGNATURE-----
