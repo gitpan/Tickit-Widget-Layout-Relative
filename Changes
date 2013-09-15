@@ -1,4 +1,14 @@
 Revision history for Tickit-Widget-Layout-Relative
 
+0.002     2013-09-15 03:55:49 Europe/London
+	No new features.
+
+	Bugs fixed:
+	* Remove stray 'warn' output from previous release
+
+	Documentation:
+	* Add note about API stability
+	* Add screenshot
+
 0.001     2013-09-15 03:30:42 Europe/London
 	Initial CPAN release

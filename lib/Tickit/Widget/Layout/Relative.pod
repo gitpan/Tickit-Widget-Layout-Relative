@@ -13,7 +13,7 @@ sure you change the first line.
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 Tickit::Widget::Layout::Relative - apply sizing to a group
 of L<Tickit> widgets
 
@@ -51,6 +51,12 @@ of L<Tickit> widgets
 A container widget which provides 'relative' layout for widgets:
 specify the relations between the widget locations and this will
 attempt to fit them to the available space.
+
+=begin HTML
+
+<p><img src="http://tickit.perlsite.co.uk/cpan-screenshot/tickit-widget-layout-relative1.png" alt="Relative layout" width="642" height="420"></p>
+
+=end HTML
 
 =head1 METHODS
 
@@ -173,3 +179,11 @@ L<child_opts|Tickit::ContainerWidget/child_opts>, L<child_resized|Tickit::Contai
 L<get_style_pen|Tickit::Widget/get_style_pen>, L<get_style_text|Tickit::Widget/get_style_text>, L<get_style_values|Tickit::Widget/get_style_values>, L<key_focus_next_after|Tickit::Widget/key_focus_next_after>, L<key_focus_next_before|Tickit::Widget/key_focus_next_before>, L<on_pen_changed|Tickit::Widget/on_pen_changed>, L<parent|Tickit::Widget/parent>, L<pen|Tickit::Widget/pen>, L<redraw|Tickit::Widget/redraw>, L<resized|Tickit::Widget/resized>, L<set_parent|Tickit::Widget/set_parent>, L<set_pen|Tickit::Widget/set_pen>, L<set_style|Tickit::Widget/set_style>, L<set_style_tag|Tickit::Widget/set_style_tag>, L<set_window|Tickit::Widget/set_window>, L<style_classes|Tickit::Widget/style_classes>, L<take_focus|Tickit::Widget/take_focus>, L<window|Tickit::Widget/window>
 
 =back
+
+=head1 AUTHOR
+
+Tom Molesworth <cpan@entitymodel.com>
+
+=head1 LICENSE
+
+Copyright Tom Molesworth 2012-2013. Licensed under the same terms as Perl itself.

@@ -9,7 +9,7 @@ our $VERSION = '0.001';
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 Tickit::Layout::Relative - apply sizing to a group
 of L<Tickit> widgets
 

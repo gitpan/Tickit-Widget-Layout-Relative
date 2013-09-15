@@ -14,6 +14,7 @@ examples/demo.pl
 lib/Tickit/Layout/Relative.pm
 lib/Tickit/Widget/Layout/Relative.pm
 lib/Tickit/Widget/Layout/Relative.pod
+screenshots/tickit-widget-layout-relative1.png
 t/00-check-deps.t
 t/00-compile.t
 xt/author/test-eol.t
