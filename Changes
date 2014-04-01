@@ -1,5 +1,16 @@
 Revision history for Tickit-Widget-Layout-Relative
 
+0.004     2014-04-01 23:12:26+01:00 Europe/London
+	No new features.
+
+	Bugs fixed:
+	* Some visibility issues resolved when calculating layout
+
+	Documentation:
+	* Fixed synopsis example
+	* Added example to ->add to clarify the passing of the widget
+	as first parameter
+
 0.003     2013-09-15 16:41:32 Europe/London
 	No new features.
 

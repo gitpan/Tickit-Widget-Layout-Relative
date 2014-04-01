@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use parent qw(Tickit::ContainerWidget);
 
-our $VERSION = '0.003';
+our $VERSION = '0.004';
 
 =head1 NAME
 
@@ -12,7 +12,7 @@ Tickit::Widget::Layout::Relative - apply sizing to a group of L<Tickit> widgets
 
 =head1 VERSION
 
-version 0.003
+version 0.004
 
 =head1 SYNOPSIS
 
@@ -74,6 +74,7 @@ BEGIN {
 		title_fg              => 'white',
 		frame_fg              => 'white',
 		frame_linestyle       => 'rounded',
+		focus_title_fg        => 'white',
 		focus_frame_fg        => 'green',
 		focus_frame_linestyle => 'thick';
 }
@@ -200,6 +201,17 @@ right (as top_align)
 
 Don't rely on the return value. It may change in future.
 
+Example:
+
+ $layout->add(
+  Tickit::Widget::Static->new(text => '...'),
+  title  => 'Some panel',
+  id     => 'send',
+  border => 'single',
+  width  => '85%',
+  height => '15em',
+ )
+
 =cut
 
 sub add {
@@ -240,6 +252,7 @@ sub render_to_rb {
 		}
 		my $outline_pen = $self->get_style_pen($child_focus ? 'focus_frame' : 'frame');
 		{
+			# Avoid the 'pen clash' warnings
 			local $SIG{__WARN__} = sub {};
 			$rb->hline_at($item->{y}, $item->{x}, $item->{x} + $item->{w}, LINE_SINGLE, $outline_pen);
 			$rb->hline_at($item->{y} + $item->{h}, $item->{x}, $item->{x} + $item->{w}, LINE_SINGLE, $outline_pen);
@@ -268,7 +281,11 @@ sub render_to_rb {
 	# Overlay titles if we have them
 	foreach my $item (@{$self->{layout}{ready}}) {
 		next unless exists $item->{title};
-		my $title_pen = $self->get_style_pen('title');
+		my $child_focus = 0;
+		if($item->{widget} && (my $widget_win = $item->{widget}->window)) {
+			$child_focus = 1 if $widget_win->{focused} || $widget_win->{focused_child};
+		}
+		my $title_pen = $self->get_style_pen($child_focus ? 'focus_title' : 'title');
 		$rb->text_at($item->{y}, $item->{x} + 1, ' ' . $item->{title} . ' ', $title_pen);
 	}
 	$self->{frame_rectset} = $rectset;
@@ -332,6 +349,7 @@ sub window_gained {
 	$self->SUPER::window_gained($win, @_);
 	$win->{on_focus} = sub {
 #		warn "given focus\n";
+		return unless $self->window->is_visible;
 		$self->redraw;
 	};
 }
@@ -370,6 +388,7 @@ sub reshape {
 				$rect->lines,
 				$rect->cols,
 			) unless $widget->window->rect->equals($rect);
+#			$widget->window->hide unless $win->is_visible;
 		} else {
 			my $sub = $win->make_sub(
 				$rect->top,
@@ -377,6 +396,7 @@ sub reshape {
 				$rect->lines,
 				$rect->cols
 			);
+#			$sub->hide unless $win->is_visible;
 			$widget->set_window($sub);
 		}
 	}
@@ -401,8 +421,29 @@ sub set_focus_callback {
 sub _focus_gained {
 	my $self = shift;
 	my $child = shift;
-	$self->{focus_callback}->($child) if $child;
+	$self->{focus_callback}->($child) if $child && $self->{focus_callback};
 	$self->SUPER::_focus_gained($child, @_)
+}
+sub expose {
+	my $self = shift;
+	my @children = @{ $self->{child_windows} || [] };
+	my $visible = 1;
+	{
+		my $w = $self;
+		while($w != $w->root) {
+			unless($w->is_visible) {
+				$visible = 0;
+				last;
+			}
+			$w = $w->parent;
+		}
+	}
+	if($visible) {
+		$_->show for grep !$_->is_visible, @children;
+	} else {
+		$_->hide for grep $_->is_visible, @children;
+	}
+	$self->SUPER::expose(@_)
 }
 
 1;
@@ -415,4 +456,4 @@ Tom Molesworth <cpan@entitymodel.com>
 
 =head1 LICENSE
 
-Copyright Tom Molesworth 2012-2013. Licensed under the same terms as Perl itself.
+Copyright Tom Molesworth 2012-2014. Licensed under the same terms as Perl itself.
