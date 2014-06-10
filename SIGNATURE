@@ -14,27 +14,27 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 db696487f4d32823d3e00f9a4a1cef4fa36e8fea Changes
+SHA1 25c9fbb5cff17920b676b95772b0cd3c6505e1ed Changes
 SHA1 97c2e1700a2026b437c0826f269b9d67e5922189 INSTALL
 SHA1 509f655780fe2a934ad8515fa15921b96a6de84c LICENSE
-SHA1 fb9b3d6f55fd9d86bf44b84c2956412e4d4c6e45 MANIFEST
-SHA1 d7d92e01fb2a7165c9712196b1c1d8b3f8e82c89 META.json
-SHA1 c963f33050907312d4722fee9e28c1500723443b META.yml
-SHA1 7dd9915c8c1bca5dc58c9bd6a94cb70e76bfc817 Makefile.PL
-SHA1 864234323ede07f00c46a909e92270220796c18b README
+SHA1 19203e94bb04e766e57894e3e1430be29eb89800 MANIFEST
+SHA1 c0f3e2771d9cbf504c6ade5f32aaff2a69ce684e META.json
+SHA1 3ea0876393e722cffb125aaf216b7a508d27a3be META.yml
+SHA1 70e031de05a3e7afeeaa92bd45956373de46a787 Makefile.PL
+SHA1 df19ef66006b817eba4de2273852e4b392127245 README
 SHA1 3970e4b93349b576b94347071c0e15436891b135 cpanfile
 SHA1 102c81f6561742400d829c733d0a16aa76919021 dist.ini
 SHA1 545964b8590dd72bd1e9eac9c98ca647cefbb966 examples/base.pl
 SHA1 54f15f86091bca673070aa10005793926ee934f5 examples/demo.pl
 SHA1 1aaecd8ce4b0f1219ccbd69c58ed8de43c86fd05 examples/dsl.pl
 SHA1 3334b0ea6d7119e726f3c633162ad7b208cdc943 examples/synopsis.pl
-SHA1 342bf7bbd53f179b30e8b6190d453b068dcf9bb8 lib/Tickit/Layout/Relative.pm
-SHA1 38bea1282cb3cded76f5bbf3403ab2da6da31651 lib/Tickit/Widget/Layout/Relative.pm
-SHA1 d58d627dcfb0e4daa23f337cd18b0c212c820d32 lib/Tickit/Widget/Layout/Relative.pod
+SHA1 50b5d712a3f2cd1ab2bbe63a1da2bdd261b3830c lib/Tickit/Layout/Relative.pm
+SHA1 855a6534d159b04e5ff7d243c7240cc1f7f3ddbb lib/Tickit/Widget/Layout/Relative.pm
+SHA1 8b91f455056efe419cc462bd4a8c6915b13a5fb2 lib/Tickit/Widget/Layout/Relative.pod
 SHA1 fb02eb25df861f5acab61f7133d76281e35cb727 screenshots/tickit-widget-layout-relative1.png
 SHA1 985d9ded8d8ed7e344a09e52b1402e878e91da28 t/00-check-deps.t
-SHA1 8f3f8bee2c91d115cc4595ecb2780db5a1ea95e5 t/00-compile.t
-SHA1 c56cb3bc847e512dcec236c309f4e0b6455c3dc0 xt/author/test-eol.t
+SHA1 45ec5ac00849e251125326f56aae00c26db7f443 t/00-compile.t
+SHA1 f242e380d897f0430a668ea3f2938df75c0bef55 xt/author/test-eol.t
 SHA1 198d1665317c3d91e3bb81f0a3b8dad8d4d66f20 xt/release/common_spelling.t
 SHA1 c6c3c9f7fe12058b4771449dff874b1c450c982c xt/release/mojibake.t
 SHA1 296928dbbcaffd1514ccc9b77a1e6e03cfe9b068 xt/release/pod-syntax.t
@@ -43,11 +43,11 @@ SHA1 bbcd59d081d9940af5d43337ae85458075933829 xt/release/test-version.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.12 (GNU/Linux)
 
-iQEcBAEBAgAGBQJTOznMAAoJEFKElMNpjtyDtSEH/3nzANr8WIU27zmEYf5Cj2Cq
-0/ATu67YZdRNJ4fkFiejoStka7SZa09tmk2Lw1+ViTbwSR/ozB3xkNPtyQiAgxdk
-5FYjsPUM5Xz8+UHBVNYDTlJH4raxrfe9KLJIAw0Xmt1b/Y4BPgVjU2Sel+s4FByZ
-loza9QZQMkL9VT1m13A/HWGaLRvXGaZeYpX8Vo0p6ZQcSU0NKB88BBpMUl//yC1B
-0zJK/TLLkece3nWfinfZ/ziMfzG5T2Yn8p3m1nK90+hZKt4gA3Q2/XzStBS9xlhI
-aL8v+2ppaRwCDaLpUy3dbFUeUXhjbOilWuQoV5z2pXk0Z1+13eGBncNYuFqWMFs=
-=4C34
+iQEcBAEBAgAGBQJTl2RTAAoJEFKElMNpjtyDm0gIANs+TvIq8TWzV+rhsBZpBd/S
+B+Vezf44E3vpOILOpH+qTphlMvX1407956EKwxrji/dsrxM8pCw0JmuXu04uBFEz
+I/ySp5OYxDdN8B0/t/GFWWgX20kvKIlg5V9/sOiEBu1kuMp+ZNYqEhFsLHERmcLi
+Yhq16v+Lekhla77h7k0Ct8m4X1umy8R09tiIbM5lsNGZ8bTOycxXpPrFmVzx9WCa
+AmVGXWUqsCQrz/NOAcun1npb/KHiIO/VY+BIKJLCJAzRYwx9ShwibMaBi7hjd3no
+UlUi+Jkvex+JYYio7F06HOFTHkoQ6W/rhfRMHtI1awXuh2oEy0E8wvGpAMyK1Jo=
+=6U4A
 -----END PGP SIGNATURE-----

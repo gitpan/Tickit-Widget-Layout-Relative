@@ -1,5 +1,5 @@
 package Tickit::Layout::Relative;
-$Tickit::Layout::Relative::VERSION = '0.004';
+$Tickit::Layout::Relative::VERSION = '0.005';
 use strict;
 use warnings;
 
@@ -9,7 +9,7 @@ Tickit::Layout::Relative - apply sizing to a group of L<Tickit> widgets
 
 =head1 VERSION
 
-version 0.004
+version 0.005
 
 =head1 SYNOPSIS
 
